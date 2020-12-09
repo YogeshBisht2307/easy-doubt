@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/video1.css')}}">
+
+
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='images/logo.png')}}"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/"><i class="fas fa-home"></i> Home <span class="sr-only"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <!--Jumbotron-->
+              <div class="jumbotron jumbotron-fluid" style="background-image: url('{{url_for('static',filename='images/jumbo.jpg')}}');background-size:cover">
+                <div class="container">
+                  <h1 class="display-4">{{details.head}}</h1>
+                  <p class="lead">{{details.desc}}</p>
+                </div>
+              </div>
+        </header>
+        <section>
+            <div class="video1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12 text-center">
+                            <video controls>
+                                <source src={{url_for('static', filename="sorting.mp4")}} >
+                            </video>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="bot-btn ">
+                                <!-- Button trigger modal -->
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary text-center col-4" data-toggle="modal" data-target="#exampleModalScrollable">
+                                    Doubt Bot
+                                    </button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade"  id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content " style="background-color: black; border:2px solid white;">
+                                            <div class="modal-header">
+                                                <img class="modal-img" id="exampleModalScrollableTitle" src="{{url_for('static',filename='images/logo.png')}}">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <!--chat bot body-->
+                                        <div class="modal-body">
+                                            <div class="chatbot-screen">
+                                                <!--chat bot message-->
+                                                <div id="chatbox">
+                                                  <p class="botText">Hi! I'm Chatterbot.</p>
+                                                </div>
+                                                <!--chatbot suggestion-->
+                                            </div>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <div id="suggestion">
+                                                <div class="suggestion-item">
+                                                    <div class="container">
+                                                        <div class="row" style="margin-left:2px;">
+                                                            <!--btn 1-->
+                                                                <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[0]}}" id="button1" class=".button" name="1">
+                                                    <!--button 2-->
+
+                                                                <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[1]}}" id="button2" class=".button" name="2">
+
+                                                                 <!--btn 1-->
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[2]}}" class=".button" id="button3" name="1">
+                                                                 <!--button 2-->
+
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[3]}}" class=".button" id="button4" name="2">
+
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[4]}}" id="button5" class=".button" name="1">
+                                                    <!--button 2-->
+
+                                                                <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[5]}}" id="button6" class=".button" name="2">
+
+                                                                 <!--btn 1-->
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[6]}}" class=".button" id="button7" name="3">
+                                                                 <!--button 2-->
+
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[7]}}" class=".button" id="button8" name="4">
+
+                                                                <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[8]}}" class=".button" id="button9" name="3">
+                                                                 <!--button 2-->
+
+                                                                 <input style="background-color:transparent;color:white;border:none;" type="button" value="{{suggestion[9]}}" class=".button" id="button10" name="4">
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="userInput">
+                                                <input id="textInput" style="color:white;" type="text" name="msg" placeholder="Message">
+                                                <input id="buttonInput" type="submit" value="Send">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-text text-center">
+                <div class="container">
+                    <p>Created by Data Pirates student of NDIIT for participating in the Hackathon 2020</p>
+                    <h6>© All right Reversed.The Easy Doubt</h6>
+                </div>
+            </div>
+        </footer>
+        <script>
+        function getBotResponse() {
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText">' + rawText + '</p>';
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            $.get("/get", { msg: rawText }).done(function(data) {
+              var botHtml = '<p class="botText">' + data + '</p>';
+              $("#chatbox").append(botHtml);
+              document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            });
+          }
+          $("#textInput").keypress(function(e) {
+              if(e.which == 13) {
+                  getBotResponse();
+              }
+          });
+          $("#buttonInput").click(function() {
+            getBotResponse();
+          })
+        </script>
+        <script>
+        $(function(){
+            $('#button1').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button1');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button2').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button2');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button3').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button3');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button4').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button4');
+                text.val(text.val()+text1.val());
+                });
+            });
+
+            $(function(){
+            $('#button5').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button5');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button6').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button6');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button7').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button7');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button8').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button8');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button9').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button9');
+                text.val(text.val()+text1.val());
+                });
+            });
+            $(function(){
+            $('#button10').on('click',function(){
+                var text=$('#textInput');
+                var text1=$('#button10');
+                text.val(text.val()+text1.val());
+                });
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    </body>
+</html>

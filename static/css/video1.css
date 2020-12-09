@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    padding:0;
+
+}
+.navbar{
+    background:linear-gradient lightcyan
+}
+ .navbar .navbar-nav .nav-item .nav-link{
+    color:black;
+    font-size:25px;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    border:1px solid white;
+    background-color:darkblue;
+    color:white;
+    border-radius: 20%;
+    padding:5px 20px;
+
+}
+.navbar .navbar-brand img{
+    width:180px;
+    height:60px;
+
+}
+.bot-btn .btn
+{
+   margin-top:20%;
+}
+.botText{
+
+    color:black;
+}
+.chatbot-screen #chatbox .botText{
+    color:white;
+    font-family:monospace;
+    font-size:17px;
+    text-align:left;
+    line-height:30px;
+
+}
+.chatbot-screen #chatbox .botText span{
+    background-color:white;
+    padding:10px;
+    border-radius:2px;
+}
+.chatbot-screen{
+    width:100%;
+    height:50px;
+}
+.modal-body{
+    height:500px;
+}
+ #textInput{
+    width:75%;
+    font-size:17px;
+    margin-left:30px;
+    border:none;
+    border-bottom:3px solid gray;
+    background-color:transparent;
+    font-family:monospace;
+
+}
+#buttonInput{
+    padding:3px;
+    font-size:17px;
+}
+.input-field{
+    margin-bottom:20px;
+    position:static;
+}
+#suggestion
+{
+    position:static;
+    overflow:auto;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+#suggestion .suggestion-item .button{
+    background-color:transparent;
+    border:none;
+    color:white;
+    margin-bottom:5px;
+    margin-left:2px;
+}
+/*for recieving the msg
+*/
+.userText{
+    color:black;
+    font-weight: bold;
+    font-family:monospace;
+    font-size:17px;
+    text-align:left;
+    line-height:30px;
+    background-color:white;
+    padding:10px;
+    border-radius:4px;
+    width:80%;
+    margin-left:20%;
+}
+.botText{
+    color:white;
+    font-family:monospace;
+    font-size:17px;
+    text-align:left;
+    line-height:30px;
+    padding-right:50px;
+    background-color:gray;
+    padding:10px;
+    border-radius:4px;
+    width:80%;
+
+}
+.suggestion-item{
+    height:60px;
+    width:100%;
+}
+.video1 video{
+    width:90%;
+    height:300px;
+    margin-bottom:5%;
+    border:2px solid white;
+    margin-top:5%;
+}
+.jumbotron{
+    color:white;
+    height:400px;
+}
+section{
+    background:linear-gradient(to bottom left,black,black,black,darkblue);
+    padding-bottom:5%;
+    margin-top:-3%;
+}
+footer{
+    color:black;
+    padding:10px;
+    background-color:lightcyan;
+}
+.video1 .row{
+    padding:5%;
+}
+
+.bot-btn .modal .modal-dialog .modal-content .modal-header .modal-img{
+ height:160px;
+ height:45px;
+}
+.bot-btn .modal .modal-dialog .modal-content .modal-header{
+    background-color:white;
+}
+.bot-btn .modal .modal-dialog .modal-content .modal-header{
+    height:70px;
+}
+#userInput #buttonInput{
+    border:2px solid white;
+    background-color:maroon;
+    color:white;
+}

@@ -1,0 +1,23 @@
+categories:
+- sort
+conversations:
+  - - sorting algorithm
+    - A sorting algorithm is used to rearrange array or a list element according to a comparision operator.
+  - - quick sort
+    - quick sort is commonly used to sort an data structure by using divide and conquer method.
+  - - selection sort
+    - Selection sort has a less time complexity 0(n) as compared to insertion sort which is 0(n^2).
+  - - bubble sort
+    - Bubble sort algorithm checks the condition for each element for its each successor and perform swapping operation.
+  - - insertion sort
+    - Insertion sort searches for the lowest element in the data structure and put it on its right location.
+  - - heap sort
+    - heap sort algorithm uses the heap table and the concept of binary search tree for sorting in data structure.
+  - - radix sort
+    - In radix sort a list of integer number sorted on the basis of digit of individual numbers.
+  - - shell sort
+    - Shell sort is an algorithm that sort the element far from each other and successively reduce the interval between the element which is to be sorted.
+  - - counting sort
+    - counting sort is a sorting technique based on keys between a specific range.
+  - - time complexity
+    - Time complexity is a measurement of time taken by a process to execute.

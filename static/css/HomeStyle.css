@@ -1,0 +1,73 @@
+
+body{
+    margin:0;
+    padding:0;
+    background-color:lightgray
+}
+.navbar{
+    background:linear-gradient lightcyan
+}
+ .navbar .navbar-nav .nav-item .nav-link{
+    color:black;
+    font-size:25px;
+
+}
+.video_thumbnail .row .sm-video{
+    margin-bottom:5%;
+    }
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    border:1px solid white;
+    background-color:darkblue;
+    color:white;
+    border-radius: 20%;
+    padding:5px 20px;
+
+}
+.navbar .navbar-brand img{
+    width:180px;
+    height:60px;
+
+}
+.jumbotron{
+    color:white;
+    height:400px;
+}
+footer{
+    color:black;
+    padding:10px;
+}
+.large_image  video{
+    width:60%;
+    height:400px;
+    margin-top:5%;
+    margin-bottom:5%;
+    border:2px solid white;
+}
+section{
+    background:linear-gradient(to bottom left,black,black,black,darkblue);
+    width:100%;
+    margin-top:-5%;
+}
+.video_thumbnail img{
+    width:100%;
+    height:200px;
+}
+.video_thumbnail{
+    padding-top:5%;
+    padding-bottom:10%;
+}
+.video_thumbnail .video-detail{
+    margin-top:5px;
+}
+.video_thumbnail{
+    margin-top:3%;
+}
+.video_thumbnail .sm-video:hover{
+    border:2px solid white;
+
+}
+.video_thumbnail .sm-video .video-detail{
+    color:white;
+}
+
+

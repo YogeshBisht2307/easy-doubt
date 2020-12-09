@@ -1,0 +1,15 @@
+categories:
+- os
+conversations:
+  - - deadlock
+    - deadlock is condition where a process is blocked and wait for another process which is not getting the resource for its execution.
+  - - preemption
+    - preemption is act of temporarily interrupting a task being carried out by our computer system without requiring its cooperation.
+  - - circular wait
+    - circular wait is a situation where each process must be waiting for a resource which is being held by another process.
+  - - hold and wait
+    - Hold and wait is a condition where a process is holding a resource and another process is waiting for the same resource.
+  - - mutual exclusion
+    - Mutual exclusion is a situation where a proces is holding a resource which is non sharable mode.
+  - - roll back
+    - roll back is a situation where system can access the record of the state of each process whenever deadlock occur.

@@ -1,0 +1,17 @@
+categories:   #Mother language, Mid-level, Drivers, Kernels, System programming, Procedure oriented, Structured programming
+- c
+conversations:
+- - mother language
+  - C language is called mother language because most of the compilers, JVM, kernels, etc are written in C.
+- - mid level
+  - C language is called mid level language beacuse it supports features of both low and high level language.
+- - drivers
+  - A driver device is a computer program that operates or controls a particular type of device that is attached to a computer.
+- - kernel
+  - The kernel is a computer program at the core of a computers operating system with complete control over everything in the system.
+- - system programming
+  - C is a system programming language because it can be used to create hardware devices, Kernels, OS etc.
+- - procedure oriented
+  - C language is a procedural oriented language because it breaks the program into functions, data structures etc to solve a problem.
+- - structured programming
+  - structured programming refers to breaking the program int parts using function. It makes the program easier to understand and modify.

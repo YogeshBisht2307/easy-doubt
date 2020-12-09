@@ -1,0 +1,11 @@
+flask
+chatterbot
+flask_sqlalchemy
+speech_recognition
+moviepy.editor
+collections
+
+
+You will have also need of some of the videos from which will be used to detected the doubtable word.
+
+I have deleted the image used in this project due to extra space, you can use any other photos instead of these.
